@@ -1,0 +1,22 @@
+Xpath=//a[@id='nav-your-amazon' and @class='nav-a']
+Xpath=//a[@href='/gift-cards/b/?ie=UTF8&node=2238192011&ref=nav_cs_gift_cards' and @class='nav-a']
+Xpath=//a[@href='/gp/browse.html?node=16115931011&ref=nav_cs_registry' and @class='nav-a']
+Xpath=//a[@href='/b/?_encoding=UTF8&ld=AZUSSOA-sell&node=12766669011&ref=nav_cs_sell' and @tabindex='52']
+Xpath=//a[@href='/gp/help/customer/display.html?nodeId=508510&ref=nav_cs_help' and @tabindex='53']]
+
+//h2[@class= 'fsdDeptTitle' and text()='Prime Video']
+//h2[@class= 'fsdDeptTitle' and text()='AmazonFresh']
+//h2[@class= 'fsdDeptTitle' and text()='Pet Supplies']
+//h2[@class= 'fsdDeptTitle' and text()='Automotive & Industrial']
+
+//div [@class='a-column a-span9 a-span-last']//h2[contains(text(),'Your Orders')]
+//div [@class='a-column a-span9 a-span-last']//h2[contains(text(),'Payment options')]
+//div [@class='a-column a-span9 a-span-last']//h2[contains(text(),'Prime')]
+
+
+
+
+
+
+
+

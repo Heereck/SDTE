@@ -1,0 +1,10 @@
+//li[@class='f-sub-menu js-nav-menu nested-menu']/child::button[@type='button' and @role='presentation']
+//button[@id='Products']/following::ul[@role = 'presentation']//child::a[@id = 'for-households']
+//button[@id='Products']/following::ul[@role = 'presentation']//child::a[@id = 'HomeSeeAllHome']
+
+
+//li[@class='f-sub-menu js-nav-menu nested-menu']/child::button[@type='button' and @role='presentation']
+//button[@id='Products']/following::ul[@role = 'presentation']//following::a[@id = 'Studentsteachers']
+
+
+//ancestor::div/following::span[text()='COMPRAR AHORA']

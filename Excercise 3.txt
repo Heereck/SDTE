@@ -1,0 +1,10 @@
+.chapternav-item a[href^="/mx/apple-music/"]
+.chapternav-item a[href^="/mx/homepod/"] 
+.chapternav-item a[href^="/mx/shop/goto/accessories/audio_music"] 
+
+.logo.series
+a[href^="/mx/apple-watch-series-4/"].more.available-more-links 
+a[href^="/mx/shop/goto/apple_watch"].more.available-more-links -4-logo
+
+
+

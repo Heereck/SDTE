@@ -1,0 +1,10 @@
+svg + div.StaticLoggedOutHomePage-communicationContent > div > span.Icon--search
+svg + div.StaticLoggedOutHomePage-communicationContent div:nth-child(2)
+svg + div.StaticLoggedOutHomePage-communicationContent > div > span.Icon.Icon--reply
+
+legend.visuallyhidden+div.clearfix.field>input[type=text]:nth-child(1)
+div.clearfix.field+div.clearfix.field>input[type=password]:nth-child(1)
+label:nth-child(1)>span.separator+a.forgot
+
+form> input.Form-textbox.Edge-textbox.is-required.is-validatedRemotely
+span+input.Button.EdgeButton--primary.EdgeButton

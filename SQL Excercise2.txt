@@ -1,0 +1,10 @@
+SELECT name
+	  ,departmentid
+  FROM Employees
+ WHERE not exist (SELECT deparmentid
+  					FROM Department 
+  				   WHERE DepartmentID = employees.DepartmentID)
+					 
+
+INSERT INTO Employees
+VALUES (8, 'Juanito',5,'2018-04-03','1989-12-12')

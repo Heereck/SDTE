@@ -1,0 +1,29 @@
+ SELECT [Employees].name
+       ,[Department].Description
+       ,[Department].departmentid
+   FROM [Employees]
+  inner JOIN [Department] ON [Employees].departmentid = [Department].departmentid
+  ORDER BY Employees.departmentid;
+  
+  
+ SELECT count(department.description) UserCount
+       ,[Department].Description
+   FROM [Employees]
+  FULL OUTER JOIN [Department] ON [Employees].departmentid = [Department].departmentid
+  group BY [Department].Description;
+
+
+ SELECT [Employees].Name
+       ,[Employees].RegistrationDate
+       ,[Department].Description
+   FROM [Employees]
+  inner JOIN [Department] ON [Employees].departmentid = [Department].departmentid
+  where [Department].Description = 'HR'
+    and Convert(date,[Employees].RegistrationDate) between '2018-1-1' and '2018-12-31'
+  order BY [Employees].RegistrationDate;
+  
+
+ SELECT Name
+       ,DATEDIFF(year, '1992/02/07', DOB) Age  
+   FROM [Employees]
+  where DATEDIFF(year, '1992/02/07', DOB) >= 26
