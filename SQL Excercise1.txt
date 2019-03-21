@@ -23,7 +23,9 @@
   order BY [Employees].RegistrationDate;
   
 
- SELECT Name
-       ,DATEDIFF(year, '1992/02/07', DOB) Age  
-   FROM [Employees]
-  where DATEDIFF(year, '1992/02/07', DOB) >= 26
+SELECT Name
+     
+,DATEDIFF(year, CONVERT(varchar,DOB,111),'2017/02/22')Age
+ 
+FROM [Employees]
+where DATEDIFF(year, CONVERT(varchar,DOB,111), '2017/02/22') < 26
