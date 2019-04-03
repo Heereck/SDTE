@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
+using System.Text;
 namespace Excercise1c
 {
     class Program
@@ -11,7 +11,7 @@ namespace Excercise1c
         public static void Main(string[] args)
         {
             int[] numbers = new int[] { 1, 2, 3, 4, 5, 6, 7, 0 };
-            int[] numbers2 = new int[3];
+            int[] numbers2 = new int[8];
             int x = 0;
             int y = 0;
             string a;
@@ -38,7 +38,7 @@ namespace Excercise1c
             Console.WriteLine("Print the second list ");
             for (int i = 0; i < 2; i++)
             {
-                numbers2[i] = numbers2[i + 6];
+                numbers2[i] = numbers[i + 6];
                 Console.WriteLine(numbers2[i]);
             }
             /////
