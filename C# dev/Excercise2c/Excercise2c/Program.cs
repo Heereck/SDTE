@@ -74,21 +74,30 @@ namespace Excercise2c
        public void PrintDiagonal(int x)
         {
             // Declare a new StringBuilder.
+            int j = 0;
             StringBuilder builder = new StringBuilder();
-            builder.Append("Print Diagonal numbers: ");
+            builder.Append("Print Diagonal numbers: ").AppendLine();
 
             for (int i = 0; i < x; i++)
             {
-                builder.Append("1    ").AppendLine();
-            }
+               
+                if (i == 0)
 
-            builder.Append("1    ").AppendLine();
-            builder.Append(" 2   ").AppendLine();
-            builder.Append("  3 ").AppendLine();
-            builder.Append("   4").AppendLine();
-            builder.AppendLine();
-
-            // Get a reference to the StringBuilder's buffer content.
+                {
+                    builder.Append(i).AppendLine();
+                }
+                else if (i != 0)
+                {
+                    while (j != i)
+                    {
+                        builder.Append(" ");
+                        j++;
+                    }
+                   builder.Append(i).AppendLine();
+                   j = 0;
+                }
+                }
+                      
             string innerString = builder.ToString();
 
             // Display with Debug.
@@ -100,6 +109,8 @@ namespace Excercise2c
     {
         static void Main(string[] args)
         {
+            string a = "0";
+            int b = 0;
             ClassRoom Terranova = new ClassRoom("Erick", "Gutierrez", "6B", 13);
             ClassRoom Begsu = new ClassRoom()
             {
@@ -128,10 +139,18 @@ namespace Excercise2c
             Console.WriteLine();
 
             PrintDia PrintDia1 = new PrintDia();
-            PrintDia1.PrintDiagonal();
-            
-            
+            Console.WriteLine("Type the lenght of the diagonal: ");
+            a = Console.ReadLine();
+            try
+            {
+                b = Convert.ToInt16(a);
+                PrintDia1.PrintDiagonal(b);
 
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Value was not a number");
+            }
         }
     }
 }
