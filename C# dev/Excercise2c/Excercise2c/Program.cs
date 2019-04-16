@@ -71,12 +71,17 @@ namespace Excercise2c
     }
     public class PrintDia
     {
-       public void PrintDiagonal()
+       public void PrintDiagonal(int x)
         {
             // Declare a new StringBuilder.
             StringBuilder builder = new StringBuilder();
             builder.Append("Print Diagonal numbers: ");
-            builder.AppendLine();
+
+            for (int i = 0; i < x; i++)
+            {
+                builder.Append("1    ").AppendLine();
+            }
+
             builder.Append("1    ").AppendLine();
             builder.Append(" 2   ").AppendLine();
             builder.Append("  3 ").AppendLine();
@@ -109,14 +114,18 @@ namespace Excercise2c
 
             Console.WriteLine("Begsu has one student called {0} {1} he is studying in class {2} and he is {3} old",
                 Begsu.Name, Begsu.LastName, Begsu.Group, Begsu.Age);
+            Console.WriteLine();
 
             ReturnValue return1 = new ReturnValue();
-            return1.value = "Returned Value";
-            Console.WriteLine(return1.value);
+            return1.value = "Juan";
+            Console.WriteLine("This is the returned Value: "+return1.value);
+            Console.WriteLine();
 
             IsPalindrome palind = new IsPalindrome();
             var x = palind.IsPalindrome1("Civic");
-            Console.WriteLine(x.ToString());
+            Console.WriteLine();
+            Console.WriteLine("The word Civis is palindrome: "+x.ToString());
+            Console.WriteLine();
 
             PrintDia PrintDia1 = new PrintDia();
             PrintDia1.PrintDiagonal();

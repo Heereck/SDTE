@@ -13,6 +13,8 @@ namespace Excercise1c
         {
 
             int result = 0;
+            str1 = str1.ToLower();
+            str2 = str2.ToLower();
 
             try
             { 
